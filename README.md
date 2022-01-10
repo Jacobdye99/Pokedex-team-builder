@@ -103,7 +103,6 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 | debugging | H | 3hrs | - | - |
 | Polish | M | 3hrs | - | - |
 | Testing | M | 2hrs | - | - |
-
 | Total | H | 35hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
