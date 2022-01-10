@@ -88,8 +88,8 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Adding Form | H | 3hrs| - | - |
+| Working with API | H | 3hrs| - | - |
 | Work on App.js | H | 1hr | - | - |
 | Map Pokemon | H | 2hrs| - | - |
 | Set up Links and Router| H | 2.5hrs | - | - |
@@ -103,7 +103,7 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 | debugging | H | 3hrs | - | - |
 | Polish | M | 3hrs | - | - |
 | Testing | M | 2hrs | - | - |
-| Total | H | 35hrs| 5hrs | 5hrs |
+| Total | H | 35hrs| - | - |
 
 ## SWOT Analysis
 
