@@ -10,10 +10,15 @@ A website that Displays a full pokedex with pokemon info and the ability to crea
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![Homepage](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20mocks%20-%20Pokedex_home.png)
+![Pokemon Info](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20mocks%20-%20Pokemon%20Info.png)
+![My Team](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20mocks%20-%20My%20Team_.png)
+![phone homepage](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20mocks%20-%20Android.png)
+![phone poke info](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20mocks%20-%20Android%20(2).png)
+![phone my Team](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20mocks%20-%20Android%20(1).png)
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![Hierarchy](https://github.com/Jacobdye99/Pokedex-team-builder/blob/main/Assets/Project%202%20Heirarchy.png)
 
 ## API and Data Sample
 
