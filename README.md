@@ -1,13 +1,12 @@
-# Pokedex-team-builder
 # Project Overview
 
 ## Project Name
 
-The name of your project.
+Pokedex Team Builder
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+A website that Displays a full pokedex with pokemon info and the ability to create your 6 pokemon team and to see what your team is weak to and what the team is powerful against
 
 ## Wireframes
 
