@@ -58,18 +58,18 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 
-- Create a functional pokedex that when you click on a pokemon's image it pulls up info on the pokedex 
+- Create a functional pokedex 
+- Display Pokemon info when clicked on
 - A team that you can add and remove pokemon to
-- Displays team weaknesses and advantages 
 
 #### PostMVP  
 
 - Implement a cool css library
 - Maybe a recommendation for a pokemon to add to the team
+- Displays team weaknesses and advantages 
 
 ## Project Schedule
 
