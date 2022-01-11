@@ -1,33 +1,44 @@
-import { Link } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from "axios"
 import MyTeam from "./MyTeam"
-import { useState } from "react"
-import api from "../sevices/apiConfig.js"
+import { useState, useEffect } from "react"
 
-const defaultInput = {
-    name: '',
-}
 
+
+
+
+const teamMember = []
 
 export default function AddToTeam(props) {
-    const [pokename, setPokename] = useState(defaultInput)
-    const handleAdd = async (e) => {
-        e.preventDefault()
-        const fields = pokename
+    
+    const [pokename, setPokename] = useState()
+    const navigate = useNavigate()
+    const {id} = useParams()
+        
+    useEffect(() => {
+    const fetchPokeData = async () => {
         const url = `https://pokeapi.co/api/v2/pokemon/${props.id}`
         const res = await axios.get(url)
-        const post = await api.post('/', {fields} )
-        console.log(res.data)
+        // console.log(res.data.name)
         setPokename(res.data.name)
+    } 
+    fetchPokeData()
+}, [])
 
-
+    function handleAdd() {
+        teamMember.push(pokename)
     }
+
+
+
+
+
+    
+    console.log(teamMember)
     return (
         <div>
-            <Link to= '/Myteam' >
-                <button onClick={handleAdd}>Add To Team</button> 
-            </Link>
-            <MyTeam />
+            <button onClick={handleAdd}>Add To Team</button> 
+            <MyTeam pokename={pokename} teamMember={teamMember}/>
         </div>
     )
 }
