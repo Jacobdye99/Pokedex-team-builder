@@ -16,3 +16,9 @@
   justify-content: center;
   width: 150px;
 }
+.stats {
+  list-style: none;
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+}

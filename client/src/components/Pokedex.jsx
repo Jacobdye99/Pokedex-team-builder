@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 export default function Pokedex() {
     const [pokemon, setPokemon] = useState([])
+    const [pokedex, setPokedex] = useState([])
     useEffect(() => {
 
         const fetchPokemon = async () => {
@@ -11,12 +12,12 @@ export default function Pokedex() {
                 const res = await axios.get(url)
                 // console.log(res.data)
                 setPokemon(res.data.pokemon_entries)
-                
+                setPokedex(res.data)
         }
         fetchPokemon()
     }, [])
 
-    if(pokemon.pokemon_entries) {
+    if(!pokedex.id) {
         return (
             <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" />
             <h2>Loading...</h2>
