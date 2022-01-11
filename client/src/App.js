@@ -10,6 +10,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Pokedex />} />
+        <Route path= '/Pokemon/:id' element={<h3>Info</h3>} />
       </Routes>
     </div>
   );

@@ -11,7 +11,7 @@ export default function Pokedex() {
                 const res = await axios.get(url)
                 // console.log(res.data)
                 setPokemon(res.data.pokemon_entries)
-                console.log(res.data.pokemon_entries[1].entry_number)
+                
         }
         fetchPokemon()
     }, [])
@@ -23,9 +23,11 @@ export default function Pokedex() {
                 {pokemon.map((poke) => {
                     return (
                         <li key={poke.entry_number} id = 'list'>
-                            <div>
-                            <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.entry_number}.png`} className="listitems" alt= {poke.pokemon_species.name} />
+                            <Link to = {`/Pokemon/${poke.entry_number}`} >
+                                <div>
+                                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.entry_number}.png`} className="listitems" alt= {poke.pokemon_species.name} />
                                 </ div>
+                            </Link>
                         </li>
                     )
                  })}
