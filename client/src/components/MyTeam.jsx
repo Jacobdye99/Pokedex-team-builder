@@ -6,27 +6,27 @@ export default function MyTeam(props) {
     return (
         <div>
             <div>
-            {props.teamMember[0]}
+            {props.teamMemberName[0]}
             </div>
             <br />
             <div>
-            {props.teamMember[1]}
+            {props.teamMemberName[1]}
             </div>
             <br />
             <div>
-            {props.teamMember[2]}
+            {props.teamMemberName[2]}
             </div>
             <br />
             <div>
-            {props.teamMember[3]}
+            {props.teamMemberName[3]}
             </div>
             <br />
             <div>
-            {props.teamMember[4]}
+            {props.teamMemberName[4]}
             </div>
             <br />
             <div>
-            {props.teamMember[5]}
+            {props.teamMemberName[5]}
             </div>
             <br />
         </div>

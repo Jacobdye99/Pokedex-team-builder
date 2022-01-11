@@ -1,6 +1,6 @@
-import { useParams, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
-import MyTeam from "./MyTeam"
+// import MyTeam from "./MyTeam"
 import { useState, useEffect } from "react"
 
 
@@ -13,8 +13,9 @@ export default function AddToTeam(props) {
     
     const [pokename, setPokename] = useState()
     const [pokeImage, setPokeImage] = useState()
+    const [pokeTypes, setPokeTypes] = useState()
     const navigate = useNavigate()
-    const {id} = useParams()
+    
         
     useEffect(() => {
     const fetchPokeData = async () => {
@@ -28,8 +29,11 @@ export default function AddToTeam(props) {
 
     function handleAdd(e) {
         e.preventDefault()
-        props.teamMember.push(pokename)
-        console.log(props.teamMember)
+        if (props.teamMemberName.length < 6) {
+        props.teamMemberName.push(pokename)
+        console.log(props.teamMemberName)
+    }
+        navigate('/Myteam')
     }
 
 
@@ -40,7 +44,9 @@ export default function AddToTeam(props) {
     
     return (
         <div>
+            
             <button onClick={handleAdd}>Add To Team</button> 
+            
         </div>
     )
 }
