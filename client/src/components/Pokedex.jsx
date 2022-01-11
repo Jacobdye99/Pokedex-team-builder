@@ -16,6 +16,14 @@ export default function Pokedex() {
         fetchPokemon()
     }, [])
 
+    if(pokemon.pokemon_entries) {
+        return (
+            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" />
+            <h2>Loading...</h2>
+        </div>
+        )
+    }
+
 
     return (
         <div>

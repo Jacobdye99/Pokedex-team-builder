@@ -11,3 +11,8 @@
 .listitems {
   width: 90px;
 }
+.pics {
+  display: inline-flex;
+  justify-content: center;
+  width: 150px;
+}
