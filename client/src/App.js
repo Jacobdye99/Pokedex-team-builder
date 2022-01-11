@@ -6,14 +6,16 @@ import Pokedex from './components/Pokedex';
 import Pokemon from './components/Pokemon';
 import MyTeam from './components/MyTeam';
 
+const teamMember = []
+
 function App() {
   return (
     <div className="App">
       <Nav />
       <Routes>
         <Route path='/' element={<Pokedex />} />
-        <Route path= '/Pokemon/:id' element={<Pokemon />} />
-        <Route path='/Myteam' element={<MyTeam />} />
+        <Route path= '/Pokemon/:id' element={<Pokemon teamMember={teamMember} />} />
+        <Route path='/Myteam' element={<MyTeam teamMember={teamMember} />} />
       </Routes>
     </div>
   );

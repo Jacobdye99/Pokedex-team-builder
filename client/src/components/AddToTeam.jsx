@@ -7,11 +7,12 @@ import { useState, useEffect } from "react"
 
 
 
-const teamMember = []
 
 export default function AddToTeam(props) {
+    // const teamMember = []
     
     const [pokename, setPokename] = useState()
+    const [pokeImage, setPokeImage] = useState()
     const navigate = useNavigate()
     const {id} = useParams()
         
@@ -25,8 +26,10 @@ export default function AddToTeam(props) {
     fetchPokeData()
 }, [])
 
-    function handleAdd() {
-        teamMember.push(pokename)
+    function handleAdd(e) {
+        e.preventDefault()
+        props.teamMember.push(pokename)
+        console.log(props.teamMember)
     }
 
 
@@ -34,11 +37,10 @@ export default function AddToTeam(props) {
 
 
     
-    console.log(teamMember)
+    
     return (
         <div>
             <button onClick={handleAdd}>Add To Team</button> 
-            <MyTeam pokename={pokename} teamMember={teamMember}/>
         </div>
     )
 }

@@ -5,7 +5,8 @@ import AddToTeam from './AddToTeam'
 
 
 
-export default function Pokemon() {
+export default function Pokemon(props) {
+    const teamMember = props.teamMember
     const [pokemon, setPokemon] = useState([])
     const [pokedex, setPokedex] = useState([])
     const {id} = useParams()
@@ -79,7 +80,7 @@ export default function Pokemon() {
                         )
                 })}
             </ul>
-            <AddToTeam id = {id}/>
+            <AddToTeam id = {id} teamMember={teamMember}/>
             
         </div>
     )

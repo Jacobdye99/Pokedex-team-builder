@@ -1,10 +1,7 @@
 
 
 export default function MyTeam(props) {
-    
-    // console.log(props.pokename)
-    // let name = props.pokename
-    // console.log(props.teamMember[1])
+
 
     return (
         <div>
