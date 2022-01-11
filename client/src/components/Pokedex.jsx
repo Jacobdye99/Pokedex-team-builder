@@ -7,20 +7,11 @@ export default function Pokedex() {
     useEffect(() => {
 
         const fetchPokemon = async () => {
-                const url = `https://pokeapi.co/api/v2/pokemon?limit=898/`
+                const url = `https://pokeapi.co/api/v2/pokedex/national`
                 const res = await axios.get(url)
                 // console.log(res.data)
-                let allPokemon = res.data
-                // setAllPokemon(res.data)
-                allPokemon.results.forEach((pokeData) => {
-                    const fetchPokemonData = async () => {
-                    const url2 = pokeData.url
-                    const res2 = await axios.get(url2)
-                    // console.log(res2.data)
-                    setPokemon(res2.data)
-                    }
-                    fetchPokemonData()
-                })
+                setPokemon(res.data.pokemon_entries)
+                console.log(res.data.pokemon_entries[1].entry_number)
         }
         fetchPokemon()
     }, [])
@@ -29,11 +20,11 @@ export default function Pokedex() {
     return (
         <div>
             <ul>
-                {pokemon.forEach((poke) => {
+                {pokemon.map((poke) => {
                     return (
-                        <li key={poke.id} id = 'list'>
+                        <li key={poke.entry_number} id = 'list'>
                             <div>
-                            <img src={poke.sprites?.front_default} className="listitems" alt= {poke.name} />
+                            <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.entry_number}.png`} className="listitems" alt= {poke.pokemon_species.name} />
                                 </ div>
                         </li>
                     )
