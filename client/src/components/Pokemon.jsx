@@ -1,12 +1,15 @@
 import {useEffect, useState } from 'react'
 import axios from 'axios'
-import {useParams, Link} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import AddToTeam from './AddToTeam'
 
 
 
 export default function Pokemon(props) {
     const teamMemberName = props.teamMemberName
+    const teamMemberPic = props.teamMemberPic
+    const teamMemberType1 = props.teamMemberType1
+    const teamMemberType2 = props.teamMemberType2
     const [pokemon, setPokemon] = useState([])
     const [pokedex, setPokedex] = useState([])
     const {id} = useParams()
@@ -80,7 +83,7 @@ export default function Pokemon(props) {
                         )
                 })}
             </ul>
-            <AddToTeam id = {id} teamMemberName={teamMemberName}/>
+            <AddToTeam id = {id} teamMemberName={teamMemberName} teamMemberPic={teamMemberPic} teamMemberType1={teamMemberType1} teamMemberType2={teamMemberType2}/>
             
         </div>
     )
