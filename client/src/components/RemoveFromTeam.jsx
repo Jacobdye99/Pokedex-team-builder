@@ -14,6 +14,7 @@ export default function RemoveFromTeam(props) {
         teamMemberType1.splice(props.num, 1)
         teamMemberType2.splice(props.num, 1)
         navigate('/Myteam')
+        props.setToggleFetch((prevToggle) => !prevToggle)
     }
 
 
