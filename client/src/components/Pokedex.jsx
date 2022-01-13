@@ -27,7 +27,7 @@ export default function Pokedex() {
 
 
     return (
-        <div>
+        <div className="fullDex">
             <ul>
                 {pokemon.map((poke) => {
                     return (

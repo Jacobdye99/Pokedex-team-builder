@@ -30,7 +30,7 @@ export default function AllTeams(props) {
                     return (
                         <li key={team.id} className="teams" >
                             <div className="teamsItems">
-                                <h3>{team.fields?.username}'s Team</h3>
+                                <h3 className="pokeNames">{team.fields?.username}'s Team</h3>
                                 <img src={team.fields?.image1} alt={team.fields?.poke1} className="allTeamPics" />
                                 <h4 className="pokeNames">{team.fields?.poke1}</h4>
                                 <img src={team.fields?.image2} alt={team.fields?.poke2} className="allTeamPics"/>

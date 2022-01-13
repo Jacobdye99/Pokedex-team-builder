@@ -52,3 +52,44 @@
   justify-content: center;
   width: 91px;
 }
+.pokeNames {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.navbar {
+  background-color: rgb(134, 3, 3);
+  margin-top: -23px;
+}
+.head {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+.Pokedex {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  margin-right: 10px;
+}
+.myTeam {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.AllTeams {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  margin-left: 10px;
+}
+#linkBar {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+.fullDex {
+  margin-top: 40px;
+}
