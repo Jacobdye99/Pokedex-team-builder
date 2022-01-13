@@ -36,7 +36,7 @@ export default function Pokemon(props) {
 
     if(!pokemon.id) {
         return (
-            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" />
+            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" style={{'width': '200px' }} />
                 <h2>Loading...</h2>
             </div>
         )
@@ -44,7 +44,7 @@ export default function Pokemon(props) {
     }
     if(!pokedex.id) {
         return (
-            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" />
+            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" style={{'width': '200px' }}/>
                 <h2>Loading...</h2>
             </div>
         )
@@ -69,7 +69,7 @@ export default function Pokemon(props) {
                 <h3>{pokemon.types[1]?.type.name}</h3>
             </div>
             <div>
-                <img src={pokemon.sprites.front_default} alt={pokemon.name} className='pics' />
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} alt={pokemon.name} className='pics' />
             </div>
             <div>
                 <h4>{pokedex.generation.name}</h4>

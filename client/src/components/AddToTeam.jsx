@@ -8,6 +8,7 @@ import { useState, useEffect } from "react"
 
 
 
+
 export default function AddToTeam(props) {
     // const teamMember = []
     
@@ -16,6 +17,8 @@ export default function AddToTeam(props) {
     const [pokeType1, setPokeType1] = useState()
     const [pokeType2, setPokeType2] = useState()
     const navigate = useNavigate()
+    
+
     
         
     useEffect(() => {

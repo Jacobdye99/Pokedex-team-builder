@@ -6,6 +6,7 @@ import Pokedex from './components/Pokedex';
 import Pokemon from './components/Pokemon';
 import MyTeam from './components/MyTeam';
 import { useState } from 'react';
+import AllTeams from './components/AllTeams';
 
 const teamMemberName = []
 const teamMemberPic = []
@@ -19,8 +20,25 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Pokedex />} />
-        <Route path= '/Pokemon/:id' element={<Pokemon teamMemberName={teamMemberName} teamMemberPic={teamMemberPic} teamMemberType1={teamMemberType1} teamMemberType2={teamMemberType2} />} />
-        <Route path='/Myteam' element={<MyTeam teamMemberName={teamMemberName} teamMemberPic={teamMemberPic} teamMemberType1={teamMemberType1} teamMemberType2={teamMemberType2} toggleFetch={toggleFetch} setToggleFetch={setToggleFetch}/>} />
+        <Route path= '/Pokemon/:id' element={<Pokemon 
+            teamMemberName={teamMemberName} 
+            teamMemberPic={teamMemberPic} 
+            teamMemberType1={teamMemberType1} 
+            teamMemberType2={teamMemberType2} 
+        />} />
+        <Route path='/Myteam' element={<MyTeam 
+            teamMemberName={teamMemberName} 
+            teamMemberPic={teamMemberPic} 
+            teamMemberType1={teamMemberType1} 
+            teamMemberType2={teamMemberType2} 
+            toggleFetch={toggleFetch} 
+            setToggleFetch={setToggleFetch}
+            />} 
+        />
+        <Route path='/AllTeams' element={<AllTeams 
+            toggleFetch={toggleFetch} 
+            setToggleFetch={setToggleFetch}
+            />} />
       </Routes>
     </div>
   );

@@ -19,7 +19,7 @@ export default function Pokedex() {
 
     if(!pokedex.id) {
         return (
-            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading" />
+            <div> <img src='https://i.giphy.com/media/IQebREsGFRXmo/giphy.webp' alt="Loading"  style={{'width': '200px' }} />
             <h2>Loading...</h2>
         </div>
         )
@@ -39,7 +39,7 @@ export default function Pokedex() {
                             </Link>
                         </li>
                     )
-                 })}
+                })}
             </ul>
             
         </div>

@@ -30,3 +30,25 @@
 .individualpoke {
   margin: 0px 10px 0px 10px;
 }
+.teams {
+  list-style: none;
+  display: flexbox;
+  justify-content: center;
+}
+.teamsItems {
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px 20px 10px 20px;
+  border-style: solid;
+}
+#delete {
+  display: flex;
+  flex-wrap: wrap;  
+  margin: 50px;
+
+}
+.allTeamPics {
+  display: inline-flex;
+  justify-content: center;
+  width: 91px;
+}

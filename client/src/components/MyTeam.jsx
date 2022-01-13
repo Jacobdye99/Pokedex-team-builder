@@ -1,4 +1,6 @@
 import RemoveFromTeam from "./RemoveFromTeam";
+import SubmitTeam from "./SubmitTeam";
+
 
 
 export default function MyTeam(props) {
@@ -107,6 +109,12 @@ export default function MyTeam(props) {
                     />
             </div>
             <br />
+            <SubmitTeam 
+                teamMemberName={teamMemberName}
+                teamMemberPic={teamMemberPic} 
+                teamMemberType1={teamMemberType1} 
+                teamMemberType2= {teamMemberType2}
+            />
         </div>
     )
 }

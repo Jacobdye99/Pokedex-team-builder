@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
+
 export default function RemoveFromTeam(props) {
     let teamMemberPic = props.teamMemberPic
     let teamMemberName = props.teamMemberName
