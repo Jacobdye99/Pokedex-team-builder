@@ -7,8 +7,6 @@ import { useNavigate } from 'react-router-dom';
 export default function SubmitTeam(props) {
     let teamMemberName = props.teamMemberName
     let teamMemberPic = props.teamMemberPic
-    // let teamMemberType1 = props.teamMemberType1
-    // let teamMemberType2 = props.teamMemberType2
     const defaultInput = {
         username: '',
         poke1: teamMemberName[0],
