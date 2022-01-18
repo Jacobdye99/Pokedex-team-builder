@@ -154,7 +154,9 @@
 @media screen and (max-width: 1380px) {
   .teams {
     display: grid;
-    grid-template-columns: 10px;
+    grid-template-columns: 10px 10px;
+    margin-left: 300px;
+    margin-right: 300px;
     
   }
   .allTeamPics {
@@ -164,8 +166,38 @@
   .teamsItems {
     display: grid;
     grid-template-columns: 10px;
-    margin-left: px;
+    margin-left: -30px;
+    margin-right: 20px;
     margin-bottom: 60px;
+    padding-right: 40px;
+    /* border-style: solid;
+    border-color: black; */
+  }
+}
+@media screen and (max-width: 800px) {
+  .teams {
+    display: grid;
+    grid-template-columns: 10px 10px;
+    margin-left: -30px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    padding-right: 40px;
+    justify-content: center;
+    
+  }
+  .allTeamPics {
+    display: grid;
+    grid-template-columns: 10px;
+    width: 100px;
+
+  }
+  .teamsItems {
+    display: grid;
+    grid-template-columns: 10px;
+    margin-left: -30px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    padding-right: 40px;
     /* border-style: solid;
     border-color: black; */
   }

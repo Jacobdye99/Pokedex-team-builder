@@ -30,18 +30,30 @@ export default function AllTeams(props) {
                         <li key={team.id} className="teams" >
                             <div className="teamsItems">
                                 <h3 className="pokeNames">{team.fields?.username}'s Team</h3>
-                                <img src={team.fields?.image1} alt={team.fields?.poke1} className="allTeamPics" />
+                                <div>
                                 <h4 className="pokeNames">{team.fields?.poke1}</h4>
-                                <img src={team.fields?.image2} alt={team.fields?.poke2} className="allTeamPics"/>
+                                <img src={team.fields?.image1} alt={team.fields?.poke1} className="allTeamPics" />
+                                </div>
+                                <div>
                                 <h4 className="pokeNames">{team.fields?.poke2}</h4>
-                                <img src={team.fields?.image3} alt={team.fields?.poke3} className="allTeamPics"/>
+                                <img src={team.fields?.image2} alt={team.fields?.poke2} className="allTeamPics"/>
+                                </div>
+                                <div>
                                 <h4 className="pokeNames">{team.fields?.poke3}</h4>
-                                <img src={team.fields?.image4} alt={team.fields?.poke4} className="allTeamPics"/>
+                                <img src={team.fields?.image3} alt={team.fields?.poke3} className="allTeamPics"/>
+                                </div>
+                                <div>
                                 <h4 className="pokeNames">{team.fields?.poke4}</h4>
-                                <img src={team.fields?.image5} alt={team.fields?.poke5} className="allTeamPics"/>
+                                <img src={team.fields?.image4} alt={team.fields?.poke4} className="allTeamPics"/>
+                                </div>
+                                <div>
                                 <h4 className="pokeNames">{team.fields?.poke5}</h4>
-                                <img src={team.fields?.image6} alt={team.fields?.poke6} className="allTeamPics"/>
+                                <img src={team.fields?.image5} alt={team.fields?.poke5} className="allTeamPics"/>
+                                </div>
+                                <div>
                                 <h4 className="pokeNames">{team.fields?.poke6}</h4>
+                                <img src={team.fields?.image6} alt={team.fields?.poke6} className="allTeamPics"/>
+                                </div>
                                 <br />
                                 <DeleteTeam id={team.id} 
                                     toggleFetch={toggleFetch} 
