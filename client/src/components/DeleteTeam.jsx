@@ -8,7 +8,7 @@ export default function DeleteTeam(props) {
     }
     return (
         <div>
-            <button onClick={handleDelete} id="delete">Delete</button> 
+            <button onClick={handleDelete} id="delete">X</button> 
         </div>
     )
 }
