@@ -26,34 +26,25 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ```json
 {
-    "records": [
-        {
-            "id": "recOeybOlC4lwealx",
-            "fields": {
-                "Name": "Bulbasaur",
-                "Type": "Grass, Posion"
-            },
-            "createdTime": "2022-01-10T05:11:27.000Z"
-        },
-        {
-            "id": "recXdOCsqtcMYV8sp",
-            "fields": {
-                "Name": "Ivysaur",
-                "Type": "Grass, Poison"
-            },
-            "createdTime": "2022-01-10T05:11:27.000Z"
-        },
-        {
-            "id": "recaGhIRzSiG2sDP8",
-            "fields": {
-                "Name": "Venosaur",
-                "Type": "Grass, Poison"
-            },
-            "createdTime": "2022-01-10T05:11:27.000Z"
-        }
-    ],
-    "offset": "itrIffbnukWpCfqEB/recaGhIRzSiG2sDP8"
-}
+"records": [
+    {
+      "id": "recAyhG3fAvKhxftw",
+      "fields": {
+        "username": "Jacob",
+        "poke1": "garchomp",
+        "image1": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+        "poke2": "gliscor",
+        "image2": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
+        "poke3": "gallade",
+        "image3": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png",
+        "poke4": "magmortar",
+        "image4": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
+        "poke5": "mismagius",
+        "image5": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+        "poke6": "empoleon",
+        "image6": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png"
+      }
+    },
 ```
 
 ### MVP/PostMVP
@@ -76,11 +67,11 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
+|July 13| Project Approval | Complete
+|July 13| Core Application Structure (HTML, CSS, etc.) | Complete
+|July 14| Pseudocode / actual code | Complete
+|July 15| Initial Clickable Model  | Complete
+|July 16| MVP | Complete
 |July 17| Presentations | Incomplete
 
 ## Timeframes
@@ -88,22 +79,21 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| - | - |
-| Working with API | H | 3hrs| - | - |
-| Work on App.js | H | 1hr | - | - |
-| Map Pokemon | H | 2hrs| - | - |
-| Set up Links and Router| H | 2.5hrs | - | - |
-| Set up Pokemon Info | H | 2hrs | -  | - |
-| Add to Team button | H | 1.5hrs | - | - |
-| Set up My Team Page | H | 3 hrs | - | - |
-| Set up Team Weakness and Advantages | H | 2hrs | - | - |
-| Remove from team button | H | 2hrs | - | - |
-| Style Css | H | 3hrs | - | - |
-| Make Css responsive | H | 1.5hrs | - | - |
-| debugging | H | 3hrs | - | - |
-| Polish | M | 3hrs | - | - |
-| Testing | M | 2hrs | - | - |
-| Total | H | 35hrs| - | - |
+| Adding Form | H | 3hrs| 2hrs |
+| Working with API | H | 3hrs| 4hrs | - |
+| Work on App.js | H | 1hr | 1hr | - |
+| Map Pokemon | H | 2hrs| 2hrs | - |
+| Set up Links and Router| H | 2.5hrs | 2hrs | - |
+| Set up Pokemon Info | H | 2hrs | 4hrs  | - |
+| Add to Team button | H | 1.5hrs | 4hrs | - |
+| Set up My Team Page | H | 3 hrs | 4hrs | - |
+| Remove from team button | H | 2hrs | 2hrs | - |
+| Style Css | H | 3hrs | 3hrs | - |
+| Make Css responsive | H | 1.5hrs | 1hr | - |
+| debugging | H | 3hrs | 2hr | - |
+| Polish | M | 3hrs | 2hr | - |
+| Testing | M | 2hrs | 1hr | - |
+| Total | H | 35hrs| 34hrs | - |
 
 ## SWOT Analysis
 
