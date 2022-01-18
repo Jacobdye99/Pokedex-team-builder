@@ -26,31 +26,39 @@
   display: inline-flex;
   justify-content: center;
   margin: 0px 10px 0px 10px;
+  max-width: 100%;
 }
 .individualpoke {
   margin: 0px 10px 0px 10px;
 }
 .teams {
   list-style: none;
-  display: flexbox;
+  display: inline-flex;
   justify-content: center;
+  max-width: 100%;
+  border-style: solid;
+  margin: 10px 20px 10px 20px;
+  flex-wrap: wrap;
 }
 .teamsItems {
   display: inline-flex;
   justify-content: center;
-  margin: 10px 20px 10px 20px;
-  border-style: solid;
+  /* margin: 10px 20px 10px 20px; */
+  /* border-style: solid; */
+  max-width: 100%;
 }
 #delete {
   display: flex;
   flex-wrap: wrap;  
   margin: 50px;
+  justify-content: center;
 
 }
 .allTeamPics {
   display: inline-flex;
   justify-content: center;
   width: 91px;
+  /* max-width: 100%; */
 }
 .pokeNames {
   margin-top: 50px;
@@ -59,6 +67,7 @@
 .navbar {
   background-color: rgb(134, 3, 3);
   margin-top: -23px;
+  max-width: 100%;
 }
 .head {
   padding-top: 20px;
@@ -77,6 +86,8 @@
   display: inline-flex;
   margin-left: 10px;
   margin-right: 10px;
+  max-width: 100%;
+  
   
 }
 .AllTeams {
@@ -89,13 +100,44 @@
   display: flex;
   justify-content: right;
   margin-right: 20px;
+  max-width: 100%;
 }
 .fullDex {
   margin-top: 40px;
 }
 .submitUser {
   margin-top: 40px;
+  justify-content: center;
+  
 }
-/* #username {
-  margin-top: 20px;
-} */
+.Name {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1380px) {
+  .teams {
+    display: grid;
+    grid-template-columns: 10px;
+    
+  }
+  .allTeamPics {
+    display: grid;
+    grid-template-columns: 10px;
+  }
+  .teamsItems {
+    display: grid;
+    grid-template-columns: 10px;
+    margin-left: px;
+    margin-bottom: 60px;
+    /* border-style: solid;
+    border-color: black; */
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .pokemonTeam {
+    display: grid;
+    grid-template-columns: 10px;
+    justify-content: center;
+  }
+}

@@ -46,6 +46,7 @@ export default function SubmitTeam(props) {
         <div>
             <form onSubmit={handleSubmit} className= 'submitUser'>
             <input id='username' placeholder='Your Name' onChange={handleTextInput}></input>
+            <br />
             <button type='submit'>Submit</button>
             </form>
         </div>
