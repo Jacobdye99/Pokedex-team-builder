@@ -1,6 +1,5 @@
 import api from "../sevices/apiConfig.js"
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
 import DeleteTeam from "./DeleteTeam.jsx"
 
 

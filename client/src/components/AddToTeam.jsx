@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
-// import MyTeam from "./MyTeam"
+
 import { useState, useEffect } from "react"
 
 
@@ -10,7 +10,7 @@ import { useState, useEffect } from "react"
 
 
 export default function AddToTeam(props) {
-    // const teamMember = []
+    
     
     const [pokename, setPokename] = useState()
     const [pokeImage, setPokeImage] = useState()
@@ -35,7 +35,7 @@ export default function AddToTeam(props) {
         
     } 
     fetchPokeData()
-}, [])
+}, [props.id])
 
     function handleAdd(e) {
         e.preventDefault()
