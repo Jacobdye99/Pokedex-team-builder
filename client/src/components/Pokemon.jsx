@@ -32,7 +32,7 @@ export default function Pokemon(props) {
             setPokedex(dexRes.data)
         }
         fetchPokedexEntry()
-    }, [])
+    }, [id])
 
     if(!pokemon.id) {
         return (
