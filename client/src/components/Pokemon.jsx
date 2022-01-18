@@ -60,7 +60,7 @@ export default function Pokemon(props) {
     return (
         <div className='Pokemon'>
             <div className='Name'>
-                <label>Name</label>
+                {/* <label>Name</label> */}
                 <h2>{pokemon.name}</h2>
             </div>
             <div className='type'>
@@ -71,10 +71,10 @@ export default function Pokemon(props) {
             <div>
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} alt={pokemon.name} className='pics' />
             </div>
-            <div>
+            <div >
                 <h4>{pokedex.generation.name}</h4>
             </div>
-            <ul>
+            <ul className='fullStats'>
                 {pokemon.stats.map((stat) => {
                     return (
                         <li key={stat.stat.name} className='stats'> 
